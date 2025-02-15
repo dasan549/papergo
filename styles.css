@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    background-color: #f36c21;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    width: 60%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.map {
+    width: 35%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #f36c21;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f36c21;
+    color: white;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f36c21;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #d85a1a;
+}
