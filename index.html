@@ -3,118 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaperGo - Impresión y Fotografía</title>
+    <title>PaperGo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #222;
+            background-color: #1e1e1e;
             color: white;
             margin: 0;
             padding: 0;
         }
         .header {
-            background-color: #E95A0C;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-        }
-        .header img {
-            height: 50px;
-            margin-right: 15px;
+            background-color: #ff6600;
+            padding: 10px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
         }
         .container {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
             padding: 20px;
         }
-        .box {
-            background-color: #333;
-            padding: 20px;
-            border-radius: 8px;
+        .left, .right {
             flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #2e2e2e;
             margin: 10px;
+            border-radius: 10px;
         }
-        .box h2 {
-            color: #E95A0C;
-        }
-        .button {
-            background-color: #E95A0C;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            display: block;
-            text-align: center;
+        .services {
+            flex: 1;
             width: 100%;
-            margin-top: 10px;
-            border-radius: 5px;
+            background-color: #2e2e2e;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #ff6600;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
         }
         th, td {
-            border: 1px solid #E95A0C;
-            padding: 8px;
+            border: 1px solid #ff6600;
+            padding: 10px;
             text-align: left;
         }
         th {
-            background-color: #E95A0C;
+            background-color: #ff6600;
             color: white;
+        }
+        .button {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
+
     <div class="header">
-        <img src="Logo.png" alt="Logo PaperGo">
-        <h1>PaperGo</h1>
+        <img src="logo.png" alt="Logo PaperGo" style="vertical-align: middle; height: 30px;"> PaperGo
     </div>
+
     <div class="container">
-        <div class="box">
+        <div class="left">
             <h2>📄 Tu servicio de impresión y fotografía sin contacto</h2>
             <p>Solicita tu impresión o foto enviando tu archivo y comprobante de pago.</p>
             <h3>Pasos:</h3>
             <ol>
                 <li>Escanea el código QR o visita nuestra página.</li>
-                <li>Envía tu documento o imagen junto con el comprobante de pago a <b>dasan549+impresiones@gmail.com</b>.</li>
+                <li>Envía tu documento o imagen junto con el comprobante de pago a <strong>dasan549+impresiones@gmail.com</strong>.</li>
                 <li>Recibe tu impresión sin contacto.</li>
             </ol>
-            <button class="button">Ver precios y solicitar</button>
+            <a href="#" class="button">Ver precios y solicitar</a>
         </div>
-        <div class="box">
+
+        <div class="right">
             <h2>📍 Zona de operación</h2>
-            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2296.9217254716464!2d-74.03138014720268!3d4.745812581138257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1739655561656!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <div class="container">
-        <div class="box">
-            <h2>📋 Servicios y Tarifas</h2>
-            <table>
-                <tr>
-                    <th>Producto</th>
-                    <th>Detalles</th>
-                    <th>Precio</th>
-                </tr>
-                <tr>
-                    <td>📄 Impresión B/N</td>
-                    <td>Carta / Oficio - 1 cara</td>
-                    <td>$150</td>
-                </tr>
-                <tr>
-                    <td>🖨️ Impresión Color</td>
-                    <td>Carta / Oficio - 1 cara</td>
-                    <td>$500</td>
-                </tr>
-                <tr>
-                    <td>🖼️ Fotografías</td>
-                    <td>Tamaño 10x15 cm / 13x18 cm</td>
-                    <td>$4000</td>
-                </tr>
-            </table>
-            <p><b>📌 Nota:</b> Pedidos mayores a X páginas tienen descuento.</p>
-            <p><b>📩 Cómo pedir:</b> Enviar archivo y pago vía correo/QR a <b>dasan549+impresiones@gmail.com</b>.</p>
-        </div>
+
+    <div class="services">
+        <h2>📋 Servicios y Tarifas</h2>
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Detalles</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>🖨️ Impresión B/N</td>
+                <td>Carta / Oficio - 1 cara</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>🖨️ Impresión Color</td>
+                <td>Carta / Oficio - 1 cara</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>📷 Fotografías</td>
+                <td>Tamaño 10x15 cm / 13x18 cm</td>
+                <td>$4000</td>
+            </tr>
+        </table>
+        <p><strong>🔴 Nota:</strong> Pedidos mayores a X páginas tienen descuento.</p>
+        <p><strong>📩 Cómo pedir:</strong> Enviar archivo y pago vía correo/QR a <strong>dasan549+impresiones@gmail.com</strong>.</p>
     </div>
+
 </body>
 </html>
