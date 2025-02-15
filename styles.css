@@ -1,88 +1,77 @@
-/* Reset de estilos para evitar inconsistencias entre navegadores */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* Estilos generales */
 body {
-    background-color: #262626;
-    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
 }
 
+/* Contenedor principal */
 .container {
-    width: 90%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
-}
-
-.header {
-    background-color: #E57232;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.logo {
-    display: block;
-    width: 150px; /* Ajusta según el tamaño deseado */
-    height: auto;
-    margin: 10px auto; /* Centrar si es necesario */
-}
-
-.section {
-    background-color: #333;
+    background: #333;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-.section-title {
-    color: #FF6F00;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+/* Estilos de encabezados */
+h1, h2, h3 {
+    color: #ffcc00;
 }
 
-.button {
-    background-color: #E57232;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+/* Estilos del logo */
+.logo {
     display: block;
-    text-align: center;
-    margin: 10px 0;
+    margin: 0 auto;
+    max-width: 200px;
 }
 
-.button:hover {
-    background-color: #FF6F00;
-}
-
-.table {
+/* Estilos de la tabla */
+table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-.table th, .table td {
-    border: 1px solid white;
+th, td {
     padding: 10px;
     text-align: left;
+    border-bottom: 1px solid #555;
 }
 
-.table th {
-    background-color: #E57232;
+th {
+    background-color: #444;
 }
 
+/* Estilos del mapa */
 .map-container {
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
 }
 
-.map-container iframe {
-    width: 100%;
-    height: 400px;
-    border-radius: 10px;
+/* Enlaces */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+.section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Iconos y detalles */
+.important {
+    color: #ff4444;
+    font-weight: bold;
 }
