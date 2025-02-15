@@ -4,30 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaperGo - Impresión y Fotografía</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #E95A0C;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            margin: 10px;
+        }
+        .box h2 {
+            color: #E95A0C;
+        }
+        .button {
+            background-color: #E95A0C;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #E95A0C;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #E95A0C;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="Logo">
-            <img src="Logo.png" alt="Logo PaperGo">
-        </div>
-    </header>
-
+    <div class="header">
+        <img src="logo.png" alt="Logo PaperGo">
+        <h1>PaperGo</h1>
+    </div>
     <div class="container">
-        <!-- Sección de contenido -->
-        <div class="content">
+        <div class="box">
             <h2>📄 Tu servicio de impresión y fotografía sin contacto</h2>
             <p>Solicita tu impresión o foto enviando tu archivo y comprobante de pago.</p>
-
             <h3>Pasos:</h3>
             <ol>
                 <li>Escanea el código QR o visita nuestra página.</li>
-                <li>Envía tu documento o imagen junto con el comprobante de pago a <strong> dasan549+impresiones@gmail.com</strong>.</li>
+                <li>Envía tu documento o imagen junto con el comprobante de pago a <b>dasan549+impresiones@gmail.com</b>.</li>
                 <li>Recibe tu impresión sin contacto.</li>
             </ol>
-
-            <button class="btn">Ver precios y solicitar</button>
-
+            <button class="button">Ver precios y solicitar</button>
+        </div>
+        <div class="box">
+            <h2>📍 Zona de operación</h2>
+            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
             <h2>📋 Servicios y Tarifas</h2>
             <table>
                 <tr>
@@ -46,23 +107,13 @@
                     <td>$500</td>
                 </tr>
                 <tr>
-                    <td>📷 Fotografías</td>
+                    <td>🖼️ Fotografías</td>
                     <td>Tamaño 10x15 cm / 13x18 cm</td>
                     <td>$4000</td>
                 </tr>
             </table>
-
-            <p><strong>📌 Nota:</strong> Pedidos mayores a X páginas tienen descuento.</p>
-            <p><strong>📩 Cómo pedir:</strong> Enviar archivo y pago vía correo/QR a <strong>dasan549+impresiones@gmail.com</strong>.</p>
-        </div>
-
-        <!-- Sección del mapa -->
-        <div class="map">
-            <h2>📍 Zona de operación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2296.9217254716464!2d-74.03138014720268!3d4.745812581138257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1739655561656!5m2!1ses!2sco"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <p><b>📌 Nota:</b> Pedidos mayores a X páginas tienen descuento.</p>
+            <p><b>📩 Cómo pedir:</b> Enviar archivo y pago vía correo/QR a <b>dasan549+impresiones@gmail.com</b>.</p>
         </div>
     </div>
 </body>
